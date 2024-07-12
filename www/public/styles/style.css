@@ -1,0 +1,366 @@
+#jquery-overlay  { position:  absolute; top:  0; left:  0; z-index:  90; width:  100%; height:  500px; }
+ #jquery-lightbox  { position:  absolute; top:  0; left:  0; width:  100%; z-index:  100; text-align:  center; line-height:  0; }
+ #jquery-lightbox a img  {  border:  none; }
+ #lightbox-container-image-box  { position:  relative; background-color:  #fff; width:  250px; height:  250px; margin:  0 auto; }
+ #lightbox-container-image  {  padding:  10px; }
+ #lightbox-loading  { position:  absolute; top:  40%; left:  0%; height:  25%; width:  100%; text-align:  center; line-height:  0; }
+ #lightbox-nav  { position:  absolute; top:  0; left:  0; height:  100%; width:  100%; z-index:  10; }
+ #lightbox-container-image-box > #lightbox-nav  {  left:  0; }
+ #lightbox-nav a  {  outline:  none; }
+ #lightbox-nav-btnPrev, #lightbox-nav-btnNext  { width:  49%; height:  100%; zoom:  1; display:  block; }
+ #lightbox-nav-btnPrev  { left:  0; float:  left; }
+ #lightbox-nav-btnNext  { right:  0; float:  right; }
+ #lightbox-container-image-data-box  { font:  10px Verdana, Helvetica, sans-serif; background-color:  #fff; margin:  0 auto; line-height:  1.4em; overflow:  auto; width:  100%; padding:  0 10px 0; }
+ #lightbox-container-image-data  { padding:  0 10px; color:  #666; }
+ #lightbox-container-image-data #lightbox-image-details  { width:  70%; float:  left; text-align:  left; }
+  #lightbox-image-details-caption  {  font-weight:  bold; }
+ #lightbox-image-details-currentNumber  { display:  block; clear:  left; padding-bottom:  1.0em; }
+    #lightbox-secNav-btnClose  { width:  66px; float:  right; padding-bottom:  0.7em; }
+ .Clearfix  { display: block; zoom: 1; }
+  .Clearfix:after  { line-height: 0px; display: block; height: 0px; visibility: hidden; clear: both; font-size: 0px; content: "."; }
+   div.Clear  { clear: both; height: 0px; font-size: 0px; }
+  .Hidden  { display: none; }
+   a img  { border: none; }
+  div.a832745f-8478-4097-b274-a01ba8b2ea8e table td  { vertical-align: top; }
+  div.a832745f-8478-4097-b274-a01ba8b2ea8e textarea  { width:  300px; height:  150px; }
+  div.a832745f-8478-4097-b274-a01ba8b2ea8e .Textbox  { width:  300px; }
+  div.a832745f-8478-4097-b274-a01ba8b2ea8e .ErrorMessage  { color: #ff0000; }
+.TextBox  { width:  120px; height:  16px; margin:  0; border:  solid 1px #999; padding:  3px; background-color:  #fff; vertical-align:  middle; color:  #333; font-size:  11px; line-height:  16px; }
+  .Button  { width:  80px; height:  24px; margin:  0; border:  solid 1px #999; padding:  3px; background-color:  #eaeaea; vertical-align:  middle; color:  #333; font-size:  11px; line-height:  16px; cursor:  pointer; }
+  .Button:hover  { background-color:  #ccc; }
+  .ButtonDisabled  { cursor: default; color: #999; }
+  .ButtonDisabled:hover  { background-color:  #eaeaea; }
+  .ListBox  { margin:  0; border:  solid 1px #999; padding:  3px; background-color:  #eaeaea; color:  #333; }
+  .AjaxLoaderContainer  { position:  fixed; left:  0; top:  0; width:  100%; height:  100%; margin:  0; padding:  0; background-color:  Transparent; background-image:  url("../imgs/background2.png"); z-index:  10000; }
+  .Image  { border:  none; }
+  .AjaxLoader  { position:  absolute; left:  50%; top:  50%; width:  100px; margin:  -50px 0 0 -50px; padding:  0; }
+  div.HiddenModal, div.HiddenModal h1, div.HiddenModal h2, div.HiddenModal h3  { font-family:  "Segoe UI" , Tahoma, Verdana, sans-serif; color: #000000; line-height: normal; }
+  div.HiddenModal h1, div.HiddenModal h2, div.HiddenModal h3  { font-size: 16px; font-weight: bold; }
+  div.HiddenModal  { display:  none; position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  5000; font-size: 12px; font-style: normal; }
+  div.HiddenModal div.HiddenModalHeader  { background-color:  Red; color:  White; }
+  div.HiddenModal div.HiddenModalContent, div.ModalPopup div.ModalContent  { width:  auto; height:  100%; padding:  15px; background-color:  white; border:  solid 1px black; overflow:  auto; }
+  div.HiddenModal, div.ModalPopup  { position:  fixed; text-align:  left; }
+  div.HiddenModal div.HiddenModalDivToCenter, div.HiddenModal div.HiddenModalContent, div.ModalPopup div.ModalContent  { width:  640px; height:  480px; }
+  div.HiddenModal div.HiddenModalDivToCenter  { bottom:  50%; right:  50%; position:  absolute; }
+  div.HiddenModal div.HiddenModalContent, div.ModalPopup div.ModalContent  { position:  relative; left:  50%; top:  50%; }
+  div.HiddenModal div.HiddenModalCloseButtonContainer  { margin:  -10px -10px 0 0; text-align:  right; }
+  div.HiddenModal select, div.HiddenModal input, div.ModalPopup select, div.ModalPopup input  { font-family:  "Segoe UI" , Tahoma, Verdana, sans-serif; font-size: 12px; }
+     div.ModalPopup  { position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  5000; font-family:  "Segoe UI" , Tahoma, Verdana, sans-serif; font-size: 12px; color: #000000; font-style: normal; }
+  div.ModalPopup div.ModalContent  { margin: -240px 0 0 -320px; }
+  div.LoginBox  { display:  none; position:  fixed; left:  0; bottom:  0; width:  410px; margin:  0; margin-bottom:  5px; margin-left:  5px; border:  solid 1px #999; padding:  10px; background-color:  #fafafa; z-index:  100; font-family:  "Segoe UI" , Tahoma, Verdana, sans-serif; font-size:  12px; color: #333; line-height: normal; font-style: normal; }
+  div.LoginBox span.LoginStar  { color:  Red; }
+ div.LoginBox span.Password  { font-weight:  bold; }
+ div.LoginBox .TextBoxLoginPassword  { width:  160px; }
+ div.DirectLogin div.LoginBox  { display:  block; }
+  div.LoginBox .loginButtonCancel, div.LoginBox .loginButtonLogin  { width:  80px; }
+  .loginButton, .logOut  { cursor:  pointer; }
+  div.LoginBox .PasswordForgotten  { margin-left:  244px; text-align:  left; display: none; }
+  div.LoginBox .PasswordForgotten a, div.LoginBox .PasswordForgotten a:link, div.LoginBox .PasswordForgotten a:hover, div.LoginBox .PasswordForgotten a:visited  { color:  #333; }
+  #DivContent div.LoginBox .PasswordForgotten a  { color:  #333; }
+ div.LoginBox .ErrorMessage  { color:  Red; margin:  5px 0px 5px 0px; }
+ div.LoginBox div.LoginLogo  { text-align:  right; }
+ div.ContainerBannerRotator  {  position:  relative; }
+ div.ContainerBannerRotator img.ImageBannerTop, div.ContainerBannerRotator img.ImageBannerBottom  {  position:  absolute;  top:  0;  left:  0; }
+ div.ContainerBannerRotator img.ImageAdditionalBannerSetImage  {  position:  absolute;  right:  0px; }
+ div.HiddenPreloadBanners  {  display:  none; }
+ #DivBanner  {  height:  174px; }
+  div.ContainerBannerRotator .ContainerBannerEditButton  {  display:  none; position:  absolute;  top:  25px;  left:  0px;  font-size:  12px; }
+ .EditBannersPopupContent  {  font-size:  12px; }
+  div.ContainerBannerRotator a.BannerRotatorOpenEditPopup  { color:  #535353 !important; text-decoration: none; border:  1px dashed #666666; padding:  5px; font-weight:  bold; background-color:  #dadada; cursor:  pointer; }
+  div.ContainerBannerRotator a.BannerRotatorOpenEditPopup:hover  { text-decoration: underline; }
+  .EditBannersPopupContent div.TabsBannerSet  {  position:  relative; }
+ .EditBannersPopupContent div.TabsBannerSet div.TabsButton  { float:  left; width:  20px; border:  solid 1px gray; padding:  5px; margin:  10px 2px 0px 4px; cursor:  pointer; text-align: center; overflow: hidden; height: 14px; position:  relative; z-index:  10; background-color:  #eaeaea; }
+  .EditBannersPopupContent div.TabsBannerSet div.TabsButtonSelected  {  border-bottom:  solid 1px white;  margin-bottom:  2px;  background-color:  White; }
+ .EditBannersPopupContent div.TabsBannerSet div.TabsButton:hover  { background-color:  White; }
+  .EditBannersPopupContent div.TabsBannerSet div.ContentOfTab  {  z-index:  0;  display:  none;  position:  absolute;  top:  35px;  left:  0;  border:  solid 1px gray;  padding:  5px;  width:  620px; }
+ .EditBannersPopupContent div.TabsBannerSet div.CreateUpload  {  width: 100px; }
+  div.ContentOfTab .Settings  {  padding:  10px 5px 5px 5px;  margin:  5px; }
+  div.BannersFilesList  {  margin:  5px;  position: relative; }
+ div.ContentOfTab .MiniBanner  {  width:  200px; }
+ div.ContentOfTab .MiniBannerPreview  {  width: 330px; }
+ div.ContentOfTab div.BannersListToAdd  {  width:  200px; }
+ div.ContentOfTab div.BannersListInSet  {  width:  350px; }
+  div.ContentOfTab .ButtonDeleteFromSet  { position: absolute; bottom: 2px; right: 10px; }
+  div.ContentOfTab table.BannerList  { margin-top: 20px; }
+  div.ContentOfTab table.BannerList td  { vertical-align: top; }
+  div.ContentOfTab table.BannerList .TdRight  { border-left:  solid 1px gray; padding-left: 10px; }
+  div.ContentOfTab .ButtonAddToSet  { position: absolute; bottom: 2px; left: 0px; }
+  div.ContentOfTab div.SettingsTitle  { float: left; width: 200px; }
+  div.ContentOfTab div.SettingsRow  { margin:  5px 0px 5px 0px; }
+  div.ContentOfTab .ButtonCreateBannerset  { width: auto; }
+  div.ContentOfTab div.ListAllBanners  { position: relative; }
+  #ContentOfTabToShowAddNew .MiniBanner  { width: 580px; }
+    #ContentOfTabToShowAddNew .ButtonDeleteBanner  { position: absolute; right: 0px; bottom: 3px; }
+  #ContentOfTabToShowAddNew .BannersFilesList  { width: 580px; }
+  span.ChannelSelect  {  border:  solid 1px red;  padding:  3px;  margin:  5px;  cursor:  pointer; }
+ span.ChannelSelectSelected  {  background-color:  Red; }
+ .HiddenTextBox  {  display:  none; }
+  div.DropDownSelectChannels  {  position:  relative;  border:  solid 1px black;  width:  300px; }
+ div.DropDownSelectChannels div.DropDownSelectChannelsButton  {  padding:  4px; }
+ div.DropDownSelectChannels div.DropDownSelectChannelsOptions  {  position:  absolute;  left:  0px;  background-color:  White;  width:  298px;  border:  solid 1px black;  display:  none;  z-index:  1; }
+  .CheckBoxTopLevel  {  margin-left:  0px; }
+ .CheckBoxFirstLevel  {  margin-left:  10px; }
+ .CheckBoxSecondLevel  {  margin-left:  30px; }
+ div.Segment  { position:  relative;  margin-top:  0px;  margin-bottom:  20px; }
+div.BrowserInfoPanel  { position:  fixed; z-index:  20; width: 100%; top:  0px; left: 0px; padding-top: 10px; }
+  div.BrowserInfoPanelContent  { margin: 0 auto 20px auto; background-color:  White; padding:  10px; border:  solid 1px red; width:  880px; height:  120px; position: relative; }
+  div.BrowserInfoPanelContent .Text  { width: 400px; float: left; padding: 0 10px 0 10px; }
+  div.BrowserInfoPanelContent .Images  { float: left; padding-top: 10px; }
+  div.BrowserInfoPanelContent .Images .Browser  { float: left; width: 135px; height: 50px; }
+  span.CloseBrowserInfo  {  cursor:  pointer; }
+  div.CloseBrowserInfo  { position: absolute; right: 0px; top: 0px; }
+.EditGalleryCloseButton  { margin:  -10px -10px 0px 0px; text-align: right; }
+  div.HiddenBoxGalleryEditContent .UploadButton  { padding:  3px; border:  solid 1px #999; background-color:  #fff; margin:  5px 26px 5px 10px; }
+  div.GalleryEditor  { position:  relative; }
+ div.GalleryEditor div.EditGalleryOptions  { display:  none; position:  absolute; top:  -30px; padding:  3px; border:  dashed 1px gray; background-color:  #e6e6e6; color: Black; cursor: pointer; }
+   div.HiddenBoxGalleryEdit  { display:  none; position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  10; }
+ div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { padding:  15px; background-color:  #ffffff; border:  solid 1px white; width:  200px; height:  40px; }
+  div.HiddenBoxGalleryEdit  { position:  fixed; text-align:  left; }
+ div.HiddenBoxGalleryEdit div.DivToCenter, div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { width:  640px; height:  480px; }
+ div.HiddenBoxGalleryEdit div.DivToCenter  { bottom:  50%; right:  50%; position:  absolute; }
+ div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { position:  relative; left:  50%; top:  50%; border:  solid 1px black; }
+   div.GalleryLinkContainer  { float:  left; }
+  div.ContainerEditListOfImages img  { padding: 3px; border:  solid 1px #999; }
+  div.ContainerEditListOfImages  { overflow:  auto; height:  340px; }
+ div.ContainerEditListOfImages div.ContainerForOneImageInPopup  { position:  relative; border:  solid 2px white; float:  left; margin:  5px; }
+ div.ContainerForOneImageInPopup div.DeleteButtonContainer  { position:  absolute; bottom:  7px; right:  7px; }
+  div.ContainerForOneImageInPopup div.AltTextInEditMode  { position:  absolute; top:  1px; left:  1px; background-color:  #ffc382; border:  solid 1px black; padding:  3px; white-space: nowrap; display:  none; }
+  .PanelImageContainerGallery img  { padding: 3px; border: solid 1px #999; margin: 1px 3px 3px 3px; }
+#EditableDiv  {  padding:  5px;  border:  solid 0px orange; overflow:  auto;  padding-top:  10px;  cursor:  text; }
+ #Menu  { padding:  0px; margin:  0px; border:  solid 2px orange; background-color:  #F6E3CE; }
+     input.IconsButtons  {  width:  16px;  height:  16px;  cursor:  pointer; border:  none;  background-color:  Transparent; }
+  input.Undo  {  background-image:  url("../imgs/undo.png"); }
+ input.Redo  {  background-image:  url("../imgs/redo.png"); }
+  input.Cut  {  background-image:  url("../imgs/cut.png"); }
+ input.Copy  {  background-image:  url("../imgs/copy.png"); }
+ input.Paste  {  background-image:  url("../imgs/paste.png"); }
+  input.Bold  {  background-image:  url("../imgs/text_bold.png"); }
+ input.Italic  {  background-image:  url("../imgs/text_italics.png"); }
+  input.InsertOrderedList  {  background-image:  url("../imgs/document_dirty.png"); }
+ input.InsertUnorderedList  {  background-image:  url("../imgs/document_notebook.png"); }
+  input.Indent  {  background-image:  url("../imgs/arrow_right_green.png"); }
+ input.Outdent  {  background-image:  url("../imgs/arrow_left_green.png"); }
+  input.CreateLink  {  background-image:  url("../imgs/bookmark_add.png"); }
+  input.StyleBlue  {  background-image:  url("../imgs/nav_plain_blue.png"); }
+ input.StyleGreen  {  background-image:  url("../imgs/nav_plain_green.png"); }
+ input.StyleRed  {  background-image:  url("../imgs/nav_plain_red.png"); }
+   input.Justified  {  background-image:  url("../imgs/text_align_justified.png"); }
+ input.Class  {  background-image:  url("../imgs/font.png"); }
+  input.SaveButton  {  background-image:  url("../imgs/disk_blue.png"); }
+   input.IconsButtonsBig  {  width:  24px;  height:  24px;  cursor:  pointer; border:  none;  background-image:  url("../imgs/document_check.png"); }
+  .ColorGreen  {  color:  Green; }
+ .ColorRed  {  color:  Red; }
+ .ColorBlue  {  color:  Blue; }
+   .a832745f-8478-4566-b76c-f3004454c693 div.ReletivForMenu div.Menu  { white-space: nowrap; }
+   .a832745f-8478-4566-b76c-f3004454c693  { min-height: 20px; }
+div.TestOnly  {  margin-top:  25px; }
+  div.PanelContenerImage  {  margin-bottom:  10px; }
+ div.imageLeft  { float:  left;  margin-right: 10px; }
+ div.imageRight  { float:  right;  margin-left: 10px; }
+    #EditableDiv  {  padding:  5px;  border:  solid 0px orange; overflow:  auto;  padding-top:  10px;  cursor:  text; }
+ #Menu  {  padding:  0px;  border:  solid 2px orange;  background-color:  #F6E3CE; }
+    input.IconsButtons  {  width:  16px;  height:  16px;  cursor:  pointer; border:  none;  background-color:  Transparent; }
+  input.Undo  {  background-image:  url("../imgs/undo.png"); }
+ input.Redo  {  background-image:  url("../imgs/redo.png"); }
+  input.Cut  {  background-image:  url("../imgs/cut.png"); }
+ input.Copy  {  background-image:  url("../imgs/copy.png"); }
+ input.Paste  {  background-image:  url("../imgs/paste.png"); }
+  input.Bold  {  background-image:  url("../imgs/text_bold.png"); }
+ input.Italic  {  background-image:  url("../imgs/text_italics.png"); }
+  input.InsertOrderedList  {  background-image:  url("../imgs/document_dirty.png"); }
+ input.InsertUnorderedList  {  background-image:  url("../imgs/document_notebook.png"); }
+  input.Indent  {  background-image:  url("../imgs/arrow_right_green.png"); }
+ input.Outdent  {  background-image:  url("../imgs/arrow_left_green.png"); }
+  input.CreateLink  {  background-image:  url("../imgs/bookmark_add.png"); }
+  input.StyleBlue  {  background-image:  url("../imgs/nav_plain_blue.png"); }
+ input.StyleGreen  {  background-image:  url("../imgs/nav_plain_green.png"); }
+ input.StyleRed  {  background-image:  url("../imgs/nav_plain_red.png"); }
+   input.Justified  {  background-image:  url("../imgs/text_align_justified.png"); }
+ input.Class  {  background-image:  url("../imgs/font.png"); }
+  input.SaveButton  {  background-image:  url("../imgs/disk_blue.png"); }
+   input.IconsButtonsBig  {  width:  24px;  height:  24px;  cursor:  pointer; border:  none;  background-image:  url("../imgs/document_check.png"); }
+  .ColorGreen  {  color:  Green; }
+ .ColorRed  {  color:  Red; }
+ .ColorBlue  {  color:  Blue; }
+    div.HiddenBoxToDislpayChangeImage  {  display:  none;  position:  absolute;  top:  0px;  left:  0px;  width:  100%;  height:  100%;  background-image:  url("../imgs/background.png");  text-align:  center;  vertical-align:  middle; z-index:  5000; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  { padding:  15px;  background-color:  Silver;  border:  solid 1px white;  width:  200px;  height:  40px; }
+   div.HiddenBoxToDislpayChangeImage  {  position:  fixed;  text-align:  left; }
+ div.HiddenBoxToDislpayChangeImage div.DivToCenter, div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  {  width:  600px;  height:  400px; }
+ div.HiddenBoxToDislpayChangeImage div.DivToCenter  {  bottom:  50%; right:  50%;  position:  absolute; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  {  position:  relative;  left:  50%;  top:  50%; }
+  div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList  {  overflow:  auto;  float:  left;  width:  150px;  height:  350px;  text-align:  center; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList .MiniImg  {  width:  100px;  margin-bottom:  5px;  border:  solid 2px white; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList .MiniImg:hover  {  border:  solid 2px orange;  cursor:  pointer; }
+  div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel  {  margin-left:  15px;  float:  left; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel div.PreviewImageContener  {  width:  400px;  height:  200px;  border:  solid 2px white;  background-color:  White; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel .PreviewImage  {  max-width:  200px;  max-height:  200px; }
+   DIV.ProgressBar  {  width:  100px;  padding:  0;  border:  1px solid black;  margin-right:  1em;  height: .75em;  margin-left: 1em;  display: -moz-inline-stack;  display: inline-block;  zoom: 1;  *display: inline; }
+  DIV.ProgressBar DIV  {  background-color:  Green;  font-size:  1pt;  height: 100%;  float: left; }
+  SPAN.asyncUploader OBJECT  {  position:  relative;  top:  5px;  left:  10px; }
+   .a832745f-8478-4578-9d8d-0d5a80ce5f49 ul  { list-style-position:  inside; }
+#Menu  { padding:  0px; border:  solid 2px orange; background-color:  #F6E3CE; }
+         div.HiddenBoxToDislpayChangeImage  { display:  none; position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  5000; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  { padding:  15px; background-color:  white; border:  solid 1px black; width:  200px; height:  40px; }
+   div.HiddenBoxToDislpayChangeImage  { position:  fixed; text-align:  left; }
+ div.HiddenBoxToDislpayChangeImage div.DivToCenter, div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  { width:  640px; height:  480px; }
+ div.HiddenBoxToDislpayChangeImage div.DivToCenter  { bottom:  50%; right:  50%; position:  absolute; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage  { position:  relative; left:  50%; top:  50%; }
+  div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList  { overflow:  auto; float:  left; width:  150px; height:  400px; text-align:  center; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList .MiniImg  { width:  100px; margin-bottom:  5px; border:  solid 2px white; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.ImageList .MiniImg:hover  { border:  solid 2px orange; cursor:  pointer; }
+  div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel  { margin-left:  15px; float:  left; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel div.PreviewImageContener  { width:  400px; height:  200px; border:  solid 2px white; background-color:  White; }
+ div.HiddenBoxToDislpayChangeImage div.BoxWithDropDownImage div.RightPanel .PreviewImage  { max-width:  200px; max-height:  200px; }
+   div.PanelImageContenerInImageTemplateLeft  { text-align:  left; }
+  div.PanelImageContenerInImageTemplateRight  { text-align:  right; }
+  div.PanelImageContenerInImageTemplateCenter  { text-align:  center; }
+  div.PanelImageContenerInImageTemplateCenter div.DivOnImage  { margin:  1em auto; }
+  div.PanelImageContenerInImageTemplateLeft div.DivOnImage  { float:  left; }
+ div.PanelImageContenerInImageTemplateRight div.DivOnImage  { float:  right; }
+   DIV.ProgressBar  { width:  100px; padding:  0; border:  1px solid black; margin-right:  1em; height:  .75em; margin-left:  1em; display:  -moz-inline-stack; display:  inline-block; zoom:  1; display: inline; }
+ DIV.ProgressBar DIV  { background-color:  Green; font-size:  1pt; height:  100%; float:  left; }
+ SPAN.asyncUploader OBJECT  { position:  relative; top:  5px; left:  10px; }
+  div.HiddenBoxToDislpayChangeImage .EditImageCloseButton  { margin: -10px -10px 0px 0px; text-align: right; }
+   div.HiddenBoxDownloadEdit .UploadButton  { padding:  3px; border:  solid 1px #999; background-color:  #fff; margin:  5px; color:  #656565; }
+  div.HiddenBoxDownloadEdit .EditDownloadCloseButton  { margin:  -10px -10px 0px 0px; text-align: right; }
+  div.DownloadEditor  { position:  relative; }
+ div.DownloadEditor div.EditDownloadOptions  { display:  none; position:  absolute; top:  -30px; padding:  3px; border:  dashed 1px gray; background-color:  #e6e6e6; cursor: pointer; }
+   div.HiddenBoxDownloadEdit  { display:  none; position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  10; }
+ div.HiddenBoxDownloadEdit div.HiddenBoxDownloadEditContent  { padding:  15px; background-color:  white; border:  solid 1px black; width:  200px; height:  40px; }
+  div.HiddenBoxDownloadEdit  { position:  fixed; text-align:  left; }
+ div.HiddenBoxDownloadEdit div.DivToCenter, div.HiddenBoxDownloadEdit div.HiddenBoxDownloadEditContent  { width:  640px; height:  480px; }
+ div.HiddenBoxDownloadEdit div.DivToCenter  { bottom:  50%; right:  50%; position:  absolute; }
+ div.HiddenBoxDownloadEdit div.HiddenBoxDownloadEditContent  { position:  relative; left:  50%; top:  50%; }
+   div.ContainerEditListOfFiles  { overflow:  auto; height:  340px; }
+  div.DownloadLinkContainer  { margin:  5px 0 10px 0; }
+  div.DownloadLinkContainer a .Icon  { float:  left; margin-right:  5px; border:  none; clear:  both; }
+  div.DownloadLinkContainer a .LinkText  { padding-top:  1px; }
+  div.HiddenBoxDownloadEdit .Center  { text-align:  center; }
+ .InfoBlock  {  margin:  25px;  width:  200px;  height:  50px;  padding:  25px;  border:  solid 2px blue; }
+ .BlockColorRed  {  background-color:  Red; }
+ .BlockColorGreen  {  background-color:  Green; }
+ .BlockColorYellow  {  background-color:  Yellow; }
+ .BlockColorOrange  {  background-color:  Orange; }
+  div.ContenerBoxInfoa_832745f-8478-4735-90ec-37d8addfbbcf div.DropDownContenerSelectColor  {  float:  right; }
+ div.HtmlBlock  { position:  relative; }
+ div.HtmlBlock div.HtmlBlockOptions  { display:  none; border:  solid 1px black; background-color:  #ccc; position:  absolute; top:  -20px; left:  0px; }
+  div.HtmlBlock .TextBoxEditHtmlBlock  {  width:  100%; }
+ div.a832745f-8478-401b-b73c-782614080ce0 div.RssReaderContainer  { padding:  10px 0 10px 0; }
+  div.a832745f-8478-401b-b73c-782614080ce0 div.RssReaderContainer div.RssItem  { margin-bottom:  10px; }
+  div.a832745f-8478-401b-b73c-782614080ce0 div.RssReaderContainer div.RssItem div.Title  { font-weight:  bold; font-size:  larger; }
+ div.a832745f-8478-401b-b73c-782614080ce0 div.RssReaderContainer div.RssItem div.Description  { margin-top:  5px; }
+  div.a832745f-8478-401b-b73c-782614080ce0 div.RssReaderContainer div.RssItem div.Link  { margin-top:  4px; text-align:  right; }
+ div.HtagEditContainer  { position:  relative; }
+ div.HtagEditContainer div.OptionsHtag  { display:  none; }
+  div.a832745f-8478-4de6-afd4-3f5eb08c1de5 ul  { float: left; margin: 0 20px 20px 0; padding: 0px; list-style-type: none; }
+  div.a832745f-8478-4de6-afd4-3f5eb08c1de5 ul li ul  { float: none; margin: 0 0 0 20px; list-style-type: none; }
+    .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable  { border-collapse:  collapse; }
+  .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr td  { border:  solid 1px Transparent; padding:  3px; }
+  .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr th  { border:  solid 1px red; padding:  10px; background-color:  Maroon; color:  Silver; }
+  .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr td.BackgroundColor1, .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr th.BackgroundColor1  { background-color:  Transparent; }
+ .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr td.BackgroundColor2, .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr th.BackgroundColor2  { background-color:  Blue; }
+  .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr td.BackgroundColor3, .a832745f-8478-4ff1-9edb-3276141d094d .EditableTable tr th.BackgroundColor3  { background-color:  Green; }
+     .a832745f-8478-4ff1-9edb-3276141d094d .Edit .EditableTable tr td  { border:  dashed 1px gray; }
+  .a832745f-8478-4ff1-9edb-3276141d094d .Menu  { width:  415px !important; }
+.Segment_1345346c-3535-4861-882f-4c7f64267963 td  { vertical-align: top; }
+  .Segment_1345346c-3535-4861-882f-4c7f64267963 .Textbox  { width: 300px; }
+  .Segment_1345346c-3535-4861-882f-4c7f64267963 textarea  { width: 300px; height: 150px; }
+  .Segment_1345346c-3535-4861-882f-4c7f64267963 .Title  { padding-right: 15px; }
+.EditGalleryCloseButton  { margin:  -10px -10px 0px 0px; text-align: right; }
+  div.HiddenBoxGalleryEditContent .UploadButton  { padding:  3px; border:  solid 1px #999; background-color:  #fff; margin:  5px 26px 5px 10px; }
+  div.GalleryEditor  { position:  relative; }
+ div.GalleryEditor div.EditGalleryOptions  { display:  none; position:  absolute; top:  -30px; padding:  3px; border:  dashed 1px gray; background-color:  #e6e6e6; color: Black; cursor: pointer; }
+   div.HiddenBoxGalleryEdit  { display:  none; position:  absolute; top:  0px; left:  0px; width:  100%; height:  100%; background-image:  url("../imgs/background.png"); text-align:  center; vertical-align:  middle; z-index:  10; }
+ div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { padding:  15px; background-color:  #ffffff; border:  solid 1px white; width:  200px; height:  40px; }
+  div.HiddenBoxGalleryEdit  { position:  fixed; text-align:  left; }
+ div.HiddenBoxGalleryEdit div.DivToCenter, div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { width:  640px; height:  480px; }
+ div.HiddenBoxGalleryEdit div.DivToCenter  { bottom:  50%; right:  50%; position:  absolute; }
+ div.HiddenBoxGalleryEdit div.HiddenBoxGalleryEditContent  { position:  relative; left:  50%; top:  50%; border:  solid 1px black; }
+   div.GalleryLinkContainer  { float:  left; }
+  div.ContainerEditListOfImages img  { padding: 3px; border:  solid 1px #999; }
+  div.ContainerEditListOfImages  { overflow:  auto; height:  340px; }
+ div.ContainerEditListOfImages div.ContainerForOneImageInPopup  { position:  relative; border:  solid 2px white; float:  left; margin:  5px; }
+ div.ContainerForOneImageInPopup div.DeleteButtonContainer  { position:  absolute; bottom:  7px; right:  7px; }
+  div.ContainerForOneImageInPopup div.AltTextInEditMode  { position:  absolute; top:  1px; left:  1px; background-color:  #ffc382; border:  solid 1px black; padding:  3px; white-space: nowrap; display:  none; }
+  .PanelImageContainerGallery img  { padding: 3px; border: solid 1px #999; margin: 1px 3px 3px 3px; }
+ body, input  { font-family: Tahoma, Arial, Verdana; font-size: 13px; }
+  body  { background-color: #fff; background-image: url('../imgs/body.jpg'); background-repeat: repeat-x; }
+  div.MainMasterContainer  { margin-left:  auto; margin-right:  auto; width:  901px; background-color: #fff; border: 1px solid #fff; }
+  #Header  { height: 88px; position: relative; }
+  #Header img  { position: absolute; right: -83px; }
+  #Banner  { width: 901px; height: 185px; overflow: hidden; border-bottom: 1px solid #000; border-top: 1px solid #000; }
+  .Content  { background-color: #fff; background-image: url('../imgs/content.jpg'); background-repeat: repeat-y; color: #82651a; }
+  ul  { padding-left: 13px; margin-left: 0px; }
+  .Content p:first-child, .Content h1:first-child, .Content h2:first-child, .Content h3:first-child  { margin-top: 0px; }
+  .Column1  { width: 175px; float: left; margin: 0 24px 0 15px; }
+  .Column2  { width: 464px; float: left; margin: 35px 24px 0 0; }
+  .Column3  { width: 170px; padding: 15px 16px 15px 13px; float: left; }
+  ul.TopNavigationUl  { margin: 0 0 20px -15px; padding: 10px 0 0 0; list-style-type: none; background-color: #a8403c; }
+  ul.TopNavigationUl li a  { display: inline-block; padding: 6px 0 6px 8px; width: 182px; border-bottom: 1px solid #fff; color: #fff; text-decoration: none; font-size: 11px; }
+  ul.TopNavigationUl li a.Selected, ul.TopNavigationUl li a.Expanded, ul.TopNavigationUl li a:hover  { background-color: #a8403c; color: #fff; }
+  ul.TopNavigationUl li ul  { list-style-type: none; background-color: #f3edcd; padding: 0px; }
+  ul.TopNavigationUl li ul li a  { border: none; padding-left: 15px; color: #82651a; width: 175px; border-bottom: 1px solid #fff; }
+  ul.TopNavigationUl li ul li a:hover, ul.TopNavigationUl li ul li a.Selected, ul.TopNavigationUl li ul li a.Expanded  { background-color: inherit; color: #333; background-color: #f8f5e2; }
+  ul.TopNavigationUl li ul li ul li a  { padding-left: 40px; width: 150px; background-position: 33px 12px; }
+  h1, h2, h3, a  { color: inherit; }
+  h1  { font-size: 14px; }
+  h2  { font-size: 13px; }
+  h3  { font-size: 12px; }
+  #Footer  { background-color: #82651a; color: #fff; text-align: right; padding: 3px 16px 3px 0; font-size: 11px; position: relative; }
+  #Footer a  { text-decoration: none; }
+  #Footer .TextImpressum  { position: absolute; left: 10px; }
+  #Footer .TextKontakt  { position: absolute; left: 205px; }
+     .Column3 h1, .Column3 h2, .Column3 h3  { padding-bottom: 8px; border-bottom: 1px solid #82651a; }
+  hr  { height: 1px; border: none; border-bottom: 1px solid #82651a; }
+
+
+#ueberscihtBtn
+{
+text-decoration:none;
+background:#f8f5e2;
+  color:#007b42;
+position:absolute;
+left:0px;
+top:18px;
+text-align:left;
+padding:4px 8px;
+width:175px;
+text-transform:uppercase;
+}
+
+#ueberscihtBtn:hover
+{
+color:white;
+background:#007b42;
+}
+
+#ueberscihtBtn div
+{
+
+  
+}
+.brand-segment
+{
+  border-bottom: 1px solid #fff;
+}
+
+.brand-segment a
+{
+  display:block;
+  width:150px;
+  margin:0 auto;
+}
+
+.brand-segment.Segment
+{
+  margin-left:-15px;
+  margin-top:0;
+  padding-top:0;
+  padding-bottom:20px;
+}
+
+.brand-segment.Segment.last
+{
+  padding-bottom:0;
+  border-bottom:none;
+}
